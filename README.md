@@ -1,1 +1,7 @@
-# Facultad ingenieria Obligatorio Colud 2024 (image.png)
+# Implementación de soluciones Cloud
+
+![Universidad ORT Uruguay](imagen.png)
+
+## Analista en Infraestructura Informática
+
+**Docente**: Mauricio Amendola
