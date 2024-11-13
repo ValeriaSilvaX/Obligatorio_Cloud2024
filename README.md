@@ -1,7 +1,11 @@
-# Implementación de soluciones Cloud
+<h1 align="center">Implementación de soluciones Cloud</h1>
 
-![Universidad ORT Uruguay](ortLogo.jpg)
+<p align="center">
+  <img src="ortLogo.jpg" alt="Universidad ORT Uruguay">
+</p>
 
-## Analista en Infraestructura Informática
+<h2 align="center">Analista en Infraestructura Informática</h2>
 
-**Docente**: Mauricio Amendola
+<p align="center">
+  <strong>Docente:</strong> Mauricio Amendola
+</p>
