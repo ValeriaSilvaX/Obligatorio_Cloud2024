@@ -1,6 +1,6 @@
 # Implementación de soluciones Cloud
 
-![Universidad ORT Uruguay](imagen.png)
+![Universidad ORT Uruguay](ortLogo.jpg)
 
 ## Analista en Infraestructura Informática
 
