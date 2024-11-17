@@ -1,12 +1,10 @@
-<h1 align="center">Implementación de soluciones Cloud</h1>
+<h1 aling:"center"> Facultad de ingeniería | Escuela de tecnología | Analista en Infraestructura Informática</h1>
 
 <p align="center">
   <img src="Extras/Imagenes/ortLogo.jpg" alt="Universidad ORT Uruguay" width=100%>
 </p>
 
-<h1 aling:"center"> Facultad de ingeniería | Escuela de tecnología - Implementación de Soluciones Cloud </h1>
-
-<h2 align="center">Analista en Infraestructura Informática</h2>
+<h2 align="center">Implementación de soluciones Cloud</h2>
 
 Estimado visitante, sea bienvenidos al repositorio de GitHub del equipo Silva-Olveira.
 
@@ -24,14 +22,12 @@ Nuestro repositorio es de contenido incremental, ya que a medida que se fue trab
 
 El grupo de alumnos del oligatorio son los siguientes
 
-<p align = "center">
-<img src = "Extras/Estudiantes" width="200">
 </p>
 <p align = "center"><strong>Valeria Silva</strong></p>
 <p align = "center"><strong>VS267838@fi365.ort.edu.uy</strong></p>
+<p align = "center"><strong>Número de estudiante - 267838</strong></p>
 
-<p align = "center">
-<img src = "Extras/Estudiantes" width="200">
 </p>
 <p align = "center"><strong>Facundo Olveira</strong></p>
 <p align = "center"><strong>FO275181@fi365.ort.edu.uy</strong></p>
+<p align = "center"><strong>Número de estudiante - 275181</strong></p>
