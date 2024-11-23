@@ -1,5 +1,34 @@
 #!/bin/bash
 
+# Verificar si AWS CLI está instalado
+if command -v aws &> /dev/null; then
+    echo "AWS CLI ya está instalado."
+else
+    # Desinstalar la versión actual de AWS CLI si está instalada
+    echo "Desinstalando la versión actual de AWS CLI (si está instalada)..."
+    sudo yum remove -y awscli curl
+
+    # Descargar la última versión de AWS CLI v2
+    echo "Descargando AWS CLI v2..."
+    curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+
+    # Descomprimir el archivo descargado
+    echo "Descomprimiendo AWS CLI..."
+    unzip awscliv2.zip
+
+    # Instalar AWS CLI v2
+    echo "Instalando AWS CLI v2..."
+    sudo ./aws/install
+
+    # Verificar que la instalación fue exitosa
+    if command -v aws &> /dev/null; then
+        echo "AWS CLI v2 instalado correctamente."
+    else
+        echo "Hubo un problema al instalar AWS CLI."
+        exit 1
+    fi
+fi
+
 # Verificar si kubectl está instalado
 if ! command -v kubectl &> /dev/null; then
     echo "kubectl no está instalado. Procediendo con la instalación..."
@@ -53,7 +82,7 @@ else
     docker --version
 fi
 
-#Verificar si terraform está instalado
+# Verificar si terraform está instalado
 if ! command -v terraform &> /dev/null; then
     echo "Terraform no está instalado. Procediendo con la instalación..."
 
