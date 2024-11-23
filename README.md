@@ -46,7 +46,9 @@ La aplicación Boutique esta compuesta por once microservicios que estan desarro
   - EKS
   - VPC
   - Auto Scaling Groups
+
 <strong>Bloques CIDRs</strong>
+
 Para generar la VPC se utilizo el bloque 10.0.0.0/16. Luego dicho bloque fue separado en las siguientes subredes. También se utilizo la región "us-east-1", con dos zonas de disponibilidad "us-east-1a" y "us-east-1b".
   - Subnet Privada 1 - 10.0.2.0/24
   - Subnet Privada 2 - 10.0.4.0/24
