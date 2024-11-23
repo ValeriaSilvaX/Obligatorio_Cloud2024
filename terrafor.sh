@@ -24,13 +24,21 @@ if cd "$RUTA"; then
     fi
 
     # Ejecutar terraform validate y verificar si fue exitoso
-    if terraform apply; then
-        echo "terraform validate completado exitosamente."
-    else
-        echo "Error al ejecutar terraform validate."
-        exit 1
-    fi
+     terraform apply
+        
+echo "Configurando contexto de Kubernetes para EKS..."
+    aws eks update-kubeconfig --name terraform-eks --region us-east-1
 
+#busca todos los archivos en el directorio manifietosd y arma los pods
+for i in "/root/.ssh/Obligatorio_Cloud2024/manifiestos/"; do
+    kubectl apply -f $i
+done
+#Obtiene información de los servicios en Kubernetes que tienen una etiqueta frontend-external
+url=$(kubectl get svc --selector= frontend-external | cut -d " " -f 10 | grep "elb")
+
+echo "la url para la pagina es: "
+#Imprime el valor del LB
+echo "$url"
 else
     echo "No se pudo acceder a la ruta $RUTA"
     exit 1
