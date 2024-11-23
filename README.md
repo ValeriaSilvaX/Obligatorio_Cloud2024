@@ -12,7 +12,7 @@ En este respositorio se encuentra el proyecto realizado en el obligatorio de Sol
 
 Nuestro repositorio es de contenido incremental, ya que a medida que se fue trabajando en el obligatorio, se fueron subiendo los cambios, trabajando con las mejores practicas posibles como nos enseño nuestro docente.
 
-<strong>Descripción</strong>
+## Descripción
 
 Este proyecto esta diseñado en sistema operativo Linux, por lo que sugerimos correrlo en el mismo.En caso se no tenero correrlo en una virtual.
 
@@ -37,6 +37,23 @@ La aplicación Boutique esta compuesta por once microservicios que estan desarro
 <p align="center">
   <img src="Extras/Imagenes/IntroApp.png" alt="Universidad ORT Uruguay" width=100%>
 </p>
+
+## Datos de infraestructura
+
+<strong>Servicios de AWS utilizados</strong>
+  - EC2
+      - Tipo de instancias: t3.medium
+  - EKS
+  - VPC
+  - Auto Scaling Groups
+
+<strong>Bloques CIDRs</strong>
+
+Para generar la VPC se utilizo el bloque 10.0.0.0/16. Luego dicho bloque fue separado en las siguientes subredes. También se utilizo la región "us-east-1", con dos zonas de disponibilidad "us-east-1a" y "us-east-1b".
+  - Subnet Privada 1 - 10.0.2.0/24
+  - Subnet Privada 2 - 10.0.4.0/24
+  - Subnet Publica 1 - 10.0.1.0/24
+  - Subnet Publica 2 - 10.0.3.0/24
 
 ## Equipo de alumnos
 
