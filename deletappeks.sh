@@ -3,6 +3,7 @@ for i in "/root/.ssh/Obligatorio_Cloud2024/manifiestos/"; do
 done
 
 RUTA="/root/.ssh/Obligatorio_Cloud2024/terraform"
+
 if cd "$RUTA"; then
     echo "Entrando a la ruta $RUTA"
 if terraform apply -auto-approve -destroy; then
