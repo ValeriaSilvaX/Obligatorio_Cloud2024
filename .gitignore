@@ -1,0 +1,15 @@
+# Ignorar la carpeta de proveedores de Terraform
+.terraform/
+
+# Ignorar archivos de estado de Terraform
+*.tfstate
+*.tfstate.backup
+
+# Ignorar archivos de log de Terraform
+crash.log
+
+# Ignorar otros archivos temporales o de configuración de Terraform
+.terraform.lock.hcl
+*.tfvarsterraform/.terraform/providers/registry.terraform.io/
+kubectl
+terraform/
