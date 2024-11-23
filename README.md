@@ -10,13 +10,13 @@ Estimado visitante, sea bienvenidos al repositorio de GitHub del equipo Silva-Ol
 
 En este respositorio se encuentra el proyecto realizado en el obligatorio de Soluciones en Implementaciones Cloud.
 
-Nuestro repositorio es de contenido incremental, ya que a medida que se fue trabajando en el obligatorio, se fueron subiendo los cambios, trabajando con las mejores practicas posibles como nos enseño nuestro docente.
+Nuestro repositorio es de contenido incremental, ya que a medida que se fue trabajando en el obligatorio, se fueron subiendo los cambios, trabajando con las mejores practicas.
 
 ## Descripción
 
-Este proyecto esta diseñado en sistema operativo Linux, por lo que sugerimos correrlo en el mismo.En caso se no tenero correrlo en una virtual.
+Este proyecto esta diseñado en sistema operativo Linux CenOs, por lo que sugerimos correrlo en el mismo.En caso se no tenero correrlo en una maquina virtual.
 
-Para poder correr este proyecto es fundamenteal tener instalado AWS CLI y AWS EKS CLI, las versiones requeridas para esto mismo, se especificara más abajo.
+Para poder correr este proyecto es fundamenteal tener instalado AWS CLI, DOCKER, TERRAFOR y AWS EKS CLI, las versiones requeridas para esto mismo, se especificara más abajo.
 
 ## Requisitos del Sistema
 
