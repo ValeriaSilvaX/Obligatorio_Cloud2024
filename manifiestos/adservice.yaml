@@ -16,7 +16,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: valeriasilvax/adservice:v1
+        image: valeriasilvax/adservice:v2
         ports:
         - containerPort: 9555
         env:

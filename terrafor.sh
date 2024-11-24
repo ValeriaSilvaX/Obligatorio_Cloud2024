@@ -36,7 +36,7 @@ done
 #Obtiene información de los servicios en Kubernetes que tienen una etiqueta frontend-external
 url=$(kubectl get svc --selector= frontend-external | cut -d " " -f 10 | grep "elb")
 
-echo "la url para la pagina es: "
+echo "La url para la pagina es: "
 #Imprime el valor del LB
 echo "$url"
 else
