@@ -58,7 +58,7 @@ Para generar la VPC se utilizo el bloque 10.0.0.0/16. Luego dicho bloque fue sep
   - Subnet Publica 1 - 10.0.1.0/24
   - Subnet Publica 2 - 10.0.3.0/24
 
-<strong>Diagrama </strong>
+## Diagrama
   <img src="Extras/Imagenes/Diagrama Cloud.drawio (1).png">
 
 ## Equipo de alumnos
@@ -83,7 +83,7 @@ El grupo de alumnos del oligatorio son los siguientes
 ## Bibliografía
 
 - [Aulas](https://aulas.ort.edu.uy/)
-- [Terraform](https://www.terraform.io/)
-- [Docker](https://www.docker.com/)
-- [Kubernetes](https://kubernetes.io/es/)
 - [AWS](https://docs.aws.amazon.com/)
+- [Docker](https://www.docker.com/)
+- [Terraform](https://www.terraform.io/)
+- [Kubernetes](https://kubernetes.io/es/)
