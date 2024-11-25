@@ -85,5 +85,5 @@ El grupo de alumnos del oligatorio son los siguientes
 - [Aulas](https://aulas.ort.edu.uy/)
 - [AWS](https://docs.aws.amazon.com/)
 - [Docker](https://www.docker.com/)
-- [Terraform](https://www.terraform.io/)
 - [Kubernetes](https://kubernetes.io/es/)
+- [Terraform](https://www.terraform.io/)
