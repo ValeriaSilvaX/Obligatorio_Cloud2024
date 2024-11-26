@@ -14,7 +14,7 @@ Nuestro repositorio es de contenido incremental, ya que a medida que se fue trab
 
 ## Descripción
 
-Este proyecto esta diseñado en sistema operativo Linux CenOs, por lo que sugerimos correrlo en el mismo.En caso se no tenero correrlo en una maquina virtual.
+Este proyecto esta diseñado en sistema operativo Linux CentOs, por lo que sugerimos correrlo en el mismo.En caso se no tenero correrlo en una maquina virtual.
 
 Para poder correr este proyecto es fundamenteal tener instalado AWS CLI, DOCKER, TERRAFOR y AWS EKS CLI, las versiones requeridas para esto mismo, se especificara más abajo.
 
@@ -46,6 +46,9 @@ La aplicación Boutique esta compuesta por once microservicios que estan desarro
   - EKS
   - VPC
   - Auto Scaling Groups
+  - NAT Gateway
+  - Internet Gatewat
+  - Elastic Load Balanced
 
 <strong>Bloques CIDRs</strong>
 
@@ -54,6 +57,9 @@ Para generar la VPC se utilizo el bloque 10.0.0.0/16. Luego dicho bloque fue sep
   - Subnet Privada 2 - 10.0.4.0/24
   - Subnet Publica 1 - 10.0.1.0/24
   - Subnet Publica 2 - 10.0.3.0/24
+
+## Diagrama
+  <img src="Extras/Imagenes/Diagrama Cloud.drawio (1).png">
 
 ## Equipo de alumnos
 
@@ -73,3 +79,11 @@ El grupo de alumnos del oligatorio son los siguientes
 <p align="center">
   <strong>Docente:</strong> Mauricio Amendola
 </p>
+
+## Bibliografía
+
+- [Aulas](https://aulas.ort.edu.uy/)
+- [AWS](https://docs.aws.amazon.com/)
+- [Docker](https://www.docker.com/)
+- [Kubernetes](https://kubernetes.io/es/)
+- [Terraform](https://www.terraform.io/)
