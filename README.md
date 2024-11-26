@@ -49,6 +49,8 @@ La aplicación Boutique esta compuesta por once microservicios que estan desarro
   - NAT Gateway
   - Internet Gatewat
   - Elastic Load Balanced
+  - Secuity Groups
+  - Docker
 
 <strong>Bloques CIDRs</strong>
 
