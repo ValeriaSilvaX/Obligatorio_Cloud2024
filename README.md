@@ -96,6 +96,9 @@ Ejecuta el script [`autoDocker.sh`](./autoDocker.sh), el cual se encargará de:
 Para ejecutarlo, asegúrate de estar en la carpeta del proyecto (`Obligatorio_Cloud2024`) y utiliza el siguiente comando:  
 ./autoDocker.sh
 
+**Notas adicionales**  
+Las imagenes pueden sacarse del directorio "src" dentro del directorio "`Obligatorio_Cloud2024`"
+
 
 ---
 
