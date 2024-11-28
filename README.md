@@ -16,7 +16,7 @@ Nuestro repositorio es de contenido incremental, ya que a medida que se fue trab
 
 Este proyecto esta diseñado en sistema operativo Linux CentOs, por lo que sugerimos correrlo en el mismo.En caso se no tenero correrlo en una maquina virtual.
 
-Para poder correr este proyecto es fundamenteal tener instalado AWS CLI, DOCKER, TERRAFOR y AWS EKS CLI, las versiones requeridas para esto mismo, se especificara más abajo.
+Para poder ejecutar este proyecto, es fundamental tener instalados AWS CLI, Docker, Terraform y K8s. Las versiones requeridas de estas herramientas se especificarán más abajo, en caso de que desees instalarlas por tu cuenta.
 
 ## Requisitos del Sistema
 
@@ -62,6 +62,60 @@ Para generar la VPC se utilizo el bloque 10.0.0.0/16. Luego dicho bloque fue sep
 
 ## Diagrama
   <img src="Extras/Imagenes/Diagrama Cloud.drawio (1).png">
+
+# Deployment  
+
+Este documento describe los pasos necesarios para desplegar la aplicación correctamente.  
+
+---
+
+## **Requisitos previos**  
+Asegúrate de tener instalados los siguientes servicios:  
+- **Docker**  
+- **Kubernetes**  
+- **Terraform**  
+- **AWS CLI**  
+
+Si alguno de estos servicios no está instalado, puedes ejecutar el script [`installservices.sh`](./installservices.sh). Este script verificará la instalación de los servicios y los instalará automáticamente si es necesario.
+Para ejecutarlo, asegúrate de estar en la carpeta del proyecto (`Obligatorio_Cloud2024`) y utiliza el siguiente comando:  
+./installservices.sh  
+---
+
+## **Configuración de Docker Hub**  
+1. Crea una cuenta en [Docker Hub](https://hub.docker.com/).  
+2. Asegúrate de tener tus credenciales de inicio de sesión listas para el siguiente paso.  
+
+---
+
+## **Creación y subida de la imagen Docker**  
+Ejecuta el script [`autoDocker.sh`](./autoDocker.sh), el cual se encargará de:  
+1. Iniciar sesión en Docker Hub.  
+2. Construir la imagen Docker basada en el Dockerfile de tu proyecto.  
+3. Subir la imagen al repositorio de tu cuenta en Docker Hub.  
+
+Para ejecutarlo, asegúrate de estar en la carpeta del proyecto (`Obligatorio_Cloud2024`) y utiliza el siguiente comando:  
+./autoDocker.sh
+
+
+---
+
+## **Despliegue de la infraestructura y servicios**  
+Para desplegar la infraestructura en AWS y los servicios en Kubernetes, ejecuta el script [`terraform.sh`](./terraform.sh). Este script realiza las siguientes tareas:  
+- Configura Terraform para gestionar la infraestructura.  
+- Crea los recursos necesarios en AWS, incluido un clúster y nodos EKS.  
+- Despliega los servicios en el clúster Kubernetes utilizando los manifiestos definidos en el proyecto.
+
+Para ejecutarlo, asegúrate de estar en la carpeta del proyecto (`Obligatorio_Cloud2024`) y utiliza el siguiente comando:  
+./autoDocker.sh
+
+---
+
+## **Notas adicionales**  
+- Asegúrate de revisar los archivos de configuración antes de ejecutar los scripts para adaptarlos a tus necesidades.  
+ 
+---
+
+¡Con estos pasos, tendrás tu aplicación lista y funcionando correctamente! 🎉 
 
 ## Equipo de alumnos
 

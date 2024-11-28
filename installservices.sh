@@ -83,7 +83,7 @@ else
 fi
 
 # Verificar si terraform está instalado
-if ! command -v terraform &> /dev/null; then
+if ! command -v terraform &> 2; then
     echo "Terraform no está instalado. Procediendo con la instalación..."
 
     # Agregar repositorio de HashiCorp para RHEL

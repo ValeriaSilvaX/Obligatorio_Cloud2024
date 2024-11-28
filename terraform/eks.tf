@@ -11,6 +11,7 @@ module "eks" {
   cluster_name    = "terraform-eks"
   cluster_version = "1.26"
 
+
   cluster_endpoint_public_access  = true
 
   vpc_id                   = aws_vpc.main.id
@@ -18,7 +19,9 @@ module "eks" {
   control_plane_subnet_ids = [aws_subnet.public1.id, aws_subnet.public2.id]
   iam_role_arn             = var.aws_iam_role
   create_iam_role          = false
+   
 
+  enable_irsa = false
   eks_managed_node_groups = {
     workers = {
       min_size     = 2
